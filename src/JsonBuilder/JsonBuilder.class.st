@@ -78,12 +78,12 @@ JsonBuilder >> object: aBlock [
 
 { #category : #accessing }
 JsonBuilder >> toJsonString [
-	^ STONJSON toString: root deepCopy 
+	^ NeoJSONWriter toString: root deepCopy 
 ]
 
 { #category : #accessing }
 JsonBuilder >> toPrettyJsonString [
-	^ STONJSON toStringPretty: root deepCopy
+	^ NeoJSONWriter toStringPretty: root deepCopy
 ]
 
 { #category : #accessing }
